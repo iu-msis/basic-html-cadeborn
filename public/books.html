@@ -5,7 +5,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="css/site.css">
 </head>
-<!-- I used a basic nav format from the bootstrap documentation, it can be found on the bootstrap website. -->
+<!-- I adapted a basic nav format from the bootstrap documentation, it can be found on the bootstrap website. -->
 <body>
   <div class="container">
     <header>
@@ -17,7 +17,7 @@
     <a class="nav-link" href="books.html">Books</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="user_info.html">User Page</a>
+    <a class="nav-link" href="user_info.html">Mark's Info</a>
   </li>
 </ul>
 </header>
@@ -33,6 +33,11 @@
       <th>MSRP</th>
     </tr>
   </thead>
+  <!-- I got information about the original publisher from Wikipedia. Wasn't sure if this information required a citation, so in the name of full disclosure I have included citations to the pages below: -->
+  <!-- The Grapes of Wrath. (2019, September 2). Retrieved from https://en.wikipedia.org/wiki/The_Grapes_of_Wrath -->
+  <!-- Brave New World. (2019, August 28). Retrieved from https://en.wikipedia.org/wiki/Brave_New_World -->
+  <!-- The Sun Also Rises. (2019, August 26). Retrieved from https://en.wikipedia.org/wiki/The_Sun_Also_Rises -->
+  <!-- Animal Farm. (2019, August 27). Retrieved from https://en.wikipedia.org/wiki/Animal_Farm-->
   <tbody>
     <tr>
       <td>The Sun Also Rises</td>
@@ -69,6 +74,7 @@
   </tbody>
 </table>
 <h3>Enter a New Book Below:</h3>
+<!-- Below is a basic input form, the basic structure of which is also from the bootstrap documentation -->
 <form>
 <div class="form-group">
   <label for="book_title">Book Title: </label>
@@ -80,7 +86,7 @@
 </div>
 <div class="form-group">
   <label for="year_published">Year Published: </label>
-  <input type="text" class="form-control" id="year_published">
+  <input type="date" class="form-control" id="year_published">
 </div>
 <div class="form-group">
   <label for="publisher">Publisher: </label>
@@ -88,11 +94,11 @@
 </div>
 <div class="form-group">
   <label for="page_count">Page Count: </label>
-  <input type="text" class="form-control" id="page_count">
+  <input type="number" class="form-control" id="page_count">
 </div>
 <div class="form-group">
   <label for="msrp">MSRP: </label>
-  <input type="text" class="form-control" id="msrp">
+  <input type="currency" class="form-control" id="msrp">
 </div>
 </form>
 <footer>

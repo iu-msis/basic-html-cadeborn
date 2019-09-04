@@ -17,6 +17,10 @@ padding: 20;
   margin-bottom: 25px;
 }
 
+.border {
+  border: solid, navy, 5px;
+}
+
 body {
   background-color: lightgray;
   color: navy;
